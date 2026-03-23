@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- 4. TUS ESTILOS PERSONALIZADOS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Configuración de Colores de tu Marca -->
     <script>
@@ -54,6 +54,7 @@
             <a href="#home" class="text-2xl font-serif font-bold tracking-widest text-white flex items-center gap-3">               
                 <span class="text-zosma-green">ZOSMA</span>STUDIO
             </a>
+            
 
             <!-- MENÚ ESCRITORIO -->
             <div class="hidden md:flex space-x-8">
@@ -78,6 +79,21 @@
         </div>
     </nav>
 
+    <audio id="musica" autoplay loop>
+  <source src="media/music/Trueno.mp3" type="audio/mpeg"></audio>
+
+<script>
+  const audio = document.getElementById("musica");
+
+  // Inicia en mute (para que el navegador lo permita)
+  audio.muted = true;
+
+  // Cuando carga la página, le bajamos el volumen y quitamos el mute
+  window.addEventListener("load", () => {
+    audio.volume = 0.1; // volumen bajo (0.0 a 1.0)
+    audio.muted = false;
+  });
+</script>
     <!-- SECCIÓN HERO (PORTADA) -->
     <section id="home" class="h-screen w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0 pointer-events-none">
@@ -113,6 +129,7 @@
             <i data-lucide="arrow-down" class="w-8 h-8"></i>
         </div>
     </section>
+
 
     <!-- SECCIÓN SERVICIOS -->
     <section id="services" class="py-24 bg-zinc-950 relative">
@@ -247,6 +264,30 @@
                         <h3 class="text-2xl font-bold text-white">Burger</h3>
                     </div>
                 </div>
+
+                  <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <img src="media/img/burgernewtwo.webp" alt="Proyecto 3" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">0800</span>
+                        <h3 class="text-2xl font-bold text-white">Burger</h3>
+                    </div>
+                </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <img src="media/img/burgernew.webp" alt="Proyecto 3" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">0800</span>
+                        <h3 class="text-2xl font-bold text-white">Burger</h3>
+                    </div>
+                </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <img src="media/img/burgernewthree.webp" alt="Proyecto 3" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">0800</span>
+                        <h3 class="text-2xl font-bold text-white">Burger</h3>
+                    </div>
+                </div>
                  <!-- PUEDES AGREGAR MÁS COPIANDO Y PEGANDO LOS BLOQUES DE ARRIBA -->
             </div>
         </div>
@@ -340,8 +381,36 @@
                         <h3 class="text-2xl font-bold text-white">Club ciudad</h3>
                     </div>
                 </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <!-- ESPACIO PARA IMAGEN 3 -->
+                    <img src="media/img/edit7.webp" alt="Proyecto 3" class="w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">Gimnasio</span>
+                        <h3 class="text-2xl font-bold text-white">Club ciudad</h3>
+                    </div>
+                </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <!-- ESPACIO PARA IMAGEN 3 -->
+                    <img src="media/img/edit19.webp" alt="Proyecto 3" class="w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">Gimnasio</span>
+                        <h3 class="text-2xl font-bold text-white">Club ciudad</h3>
+                    </div>
+                </div>
+
+                    <div class="group relative overflow-hidden cursor-pointer aspect-video bg-zinc-900">
+                    <!-- ESPACIO PARA IMAGEN 3 -->
+                    <img src="media/img/edit12.webp" alt="Proyecto 3" class="w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="text-zosma-green text-xs font-bold uppercase tracking-wider mb-1">Gimnasio</span>
+                        <h3 class="text-2xl font-bold text-white">Club ciudad</h3>
+                    </div>
+                </div>
                  <!-- PUEDES AGREGAR MÁS COPIANDO Y PEGANDO LOS BLOQUES DE ARRIBA -->
             </div>
+            
         </div>
     </section>
 
@@ -472,7 +541,7 @@
                         <h3 class="text-2xl font-bold text-white">Resto</h3>
                     </div>
                 </div>
-                 <!-- PUEDES AGREGAR MÁS COPIANDO Y PEGANDO LOS BLOQUES DE ARRIBA -->
+                <!-- PUEDES AGREGAR MÁS COPIANDO Y PEGANDO LOS BLOQUES DE ARRIBA -->
             </div>
         </div>
     </section>
@@ -525,7 +594,7 @@
             </div>
             
             <div class="mt-20 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
-                <p>&copy; 2025 Zosma Studio. Todos los derechos reservados.</p>
+                <p>&copy; 2026 Zosma Studio. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
