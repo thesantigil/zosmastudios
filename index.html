@@ -36,15 +36,7 @@
         }
       }
     </script>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.1",
-    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
-    "react/": "https://esm.sh/react@^19.2.1/"
-  }
-}
-</script>
+<link rel="shortcut icon" href="/media/img/logozosma.webp" type="image/x-icon">
 </head>
 <body class="bg-black text-gray-100 antialiased overflow-x-hidden">
     <!-- BARRA DE NAVEGACIÓN -->
@@ -79,21 +71,6 @@
         </div>
     </nav>
 
-    <audio id="musica" autoplay loop>
-  <source src="media/music/Trueno.mp3" type="audio/mpeg"></audio>
-
-<script>
-  const audio = document.getElementById("musica");
-
-  // Inicia en mute (para que el navegador lo permita)
-  audio.muted = true;
-
-  // Cuando carga la página, le bajamos el volumen y quitamos el mute
-  window.addEventListener("load", () => {
-    audio.volume = 0.1; // volumen bajo (0.0 a 1.0)
-    audio.muted = false;
-  });
-</script>
     <!-- SECCIÓN HERO (PORTADA) -->
     <section id="home" class="h-screen w-full overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0 pointer-events-none">
@@ -129,7 +106,6 @@
             <i data-lucide="arrow-down" class="w-8 h-8"></i>
         </div>
     </section>
-
 
     <!-- SECCIÓN SERVICIOS -->
     <section id="services" class="py-24 bg-zinc-950 relative">
@@ -178,7 +154,7 @@
     </section>
 
     <!-- SECCIÓN PORTFOLIO -->
-    <section id="portfolio-amorybits" class="py-24 bg-black">
+    <section id="portfolio" class="py-24 bg-black">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-white/10 pb-6">
                 <div>
