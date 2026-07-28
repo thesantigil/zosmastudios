@@ -52,6 +52,7 @@
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Inicio</a>
                 <a href="#portfolio" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Portafolio</a>
+                <a href="#dev" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Desarrollo web</a>
                 <a href="#services" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Servicios</a>
                 <a href="#contact" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Contacto</a>
             </div>
@@ -66,6 +67,7 @@
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-zinc-900 border-t border-white/10 py-4 flex flex-col items-center space-y-4 shadow-2xl">
             <a href="#home" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Inicio</a>
             <a href="#portfolio" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Portafolio</a>
+            <a href="#dev" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Desarrollo web</a>
             <a href="#services" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Servicios</a>
             <a href="#contact" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Contacto</a>
         </div>
@@ -611,6 +613,131 @@
         </div>
     </section>
 
+    <!--
+  ============================================================
+  1) AGREGAR AL NAV (desktop) — dentro de <div class="hidden md:flex space-x-8">
+     justo después del link de #contact o donde prefieras:
+  ============================================================
+  <a href="#dev" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Desarrollo Web</a>
+
+  ============================================================
+  2) AGREGAR AL MENÚ MÓVIL — dentro de <div id="mobile-menu">:
+  ============================================================
+  <a href="#dev" class="text-white uppercase tracking-widest text-lg hover:text-zosma-green mobile-link">Desarrollo Web</a>
+
+  ============================================================
+  3) LA SECCIÓN EN SÍ — pegar antes de <footer id="contact">
+     (después de la última sección de portfolio, "Pandemials Club")
+  ============================================================
+-->
+
+<!-- SECCIÓN DESARROLLO WEB -->
+<section id="dev" class="py-24 bg-zinc-950 relative overflow-hidden">
+    <!-- Fondo tipo "matrix": código cayendo, detrás de todo el contenido -->
+    <canvas id="dev-matrix" class="absolute inset-0 w-full h-full opacity-[0.50] pointer-events-none"></canvas>
+    <div class="absolute inset-0 bg-gradient-to-b from-zinc-950 via-transparent to-zinc-950 pointer-events-none"></div>
+    <div class="absolute top-0 left-0 w-1/3 h-full bg-zosma-green/5 blur-[120px] pointer-events-none"></div>
+    <div class="container mx-auto px-6 relative z-10">
+ 
+        <div class="text-center mb-16">
+            <span class="text-zosma-green uppercase tracking-widest text-sm font-bold">Otra rama de lo que hacemos</span>
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mt-2 mb-4">Desarrollo Web</h2>
+            <div class="w-24 h-1 bg-zosma-green mx-auto mb-6"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                Diseñamos y desarrollamos sitios web a medida para negocios locales: rápidos, modernos y adaptados a celular. <span class="text-[oklch(55.4%_0.135_66.442)] font-bold"> inmobiliaria, Consultorio, Restaurant y más..</span>
+            </p>
+        </div>
+ 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+ 
+            <!-- PROYECTO DEV 1 -->
+            <div class="bg-zinc-900/50 p-8 border border-white/5 hover:border-zosma-green/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col">
+                <div class="mb-6 bg-black/50 w-20 h-20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="home" class="text-zosma-green w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">PLANO</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                    Sitio para inmobiliaria con listado filtrable de casas y deptos por tipo y operación.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">HTML</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">CSS</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">JS</span>
+                </div>
+                <a href="#" target="_blank" class="text-sm text-gray-300 hover:text-zosma-green uppercase tracking-widest transition-colors duration-300">
+                    Ver proyecto &rarr;
+                </a>
+            </div>
+ 
+            <!-- PROYECTO DEV 2 -->
+            <div class="bg-zinc-900/50 p-8 border border-white/5 hover:border-zosma-green/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col">
+                <div class="mb-6 bg-black/50 w-20 h-20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="utensils" class="text-zosma-green w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">CENIZA</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                    Sitio para restaurante de alta gama con reserva de mesas por horario y disponibilidad.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">HTML</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">CSS</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">JS</span>
+                </div>
+                <a href="#" target="_blank" class="text-sm text-gray-300 hover:text-zosma-green uppercase tracking-widest transition-colors duration-300">
+                    Ver proyecto &rarr;
+                </a>
+            </div>
+ 
+            <!-- PROYECTO DEV 3 -->
+            <div class="bg-zinc-900/50 p-8 border border-white/5 hover:border-zosma-green/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col">
+                <div class="mb-6 bg-black/50 w-20 h-20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="smile" class="text-zosma-green w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Sonría</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                    Sitio para consultorio odontológico con turnos por especialidad, fecha y horario.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">HTML</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">CSS</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">JS</span>
+                </div>
+                <a href="#" target="_blank" class="text-sm text-gray-300 hover:text-zosma-green uppercase tracking-widest transition-colors duration-300">
+                    Ver proyecto &rarr;
+                </a>
+            </div>
+ 
+            <!-- PROYECTO DEV 4 -->
+            <div class="bg-zinc-900/50 p-8 border border-white/5 hover:border-zosma-green/50 transition-all duration-300 group hover:-translate-y-2 flex flex-col">
+                <div class="mb-6 bg-black/50 w-20 h-20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="store" class="text-zosma-green w-10 h-10"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Morfi Bolívar</h3>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4 flex-grow">
+                    Directorio de locales gastronómicos de San Carlos de Bolívar.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">HTML</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">CSS</span>
+                    <span class="text-xs text-zosma-green border border-zosma-green/30 rounded-sm px-2 py-1">JS</span>
+                </div>
+                <a href="#" target="_blank" class="text-sm text-gray-300 hover:text-zosma-green uppercase tracking-widest transition-colors duration-300">
+                    Ver proyecto &rarr;
+                </a>
+            </div>
+            <!-- PUEDES AGREGAR MÁS COPIANDO Y PEGANDO LOS BLOQUES DE ARRIBA -->
+ 
+        </div>
+ 
+        <div class="text-center mt-16">
+            <a href="https://wa.me/542212213933" target="_blank" class="px-8 py-3 bg-zosma-green hover:bg-emerald-800 text-white font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm inline-block">
+                Solicitar presupuesto
+            </a>
+        </div>
+ 
+    </div>
+</section>
+
     <!-- SECCIÓN CONTACTO -->
     <footer id="contact" class="bg-zinc-950 pt-24 pb-12 border-t border-white/5">
         <div class="container mx-auto px-6">
@@ -665,36 +792,95 @@
     </footer>
 
     <!-- LOGICA JAVASCRIPT (Simple, sin frameworks pesados) -->
-    <script>
-        // 1. Iniciar Iconos
-        lucide.createIcons();
+<script>
+    // 1. Iniciar Iconos
+    lucide.createIcons();
 
-        // 2. Lógica del Menú Móvil
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+    // 2. Lógica del Menú Móvil
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
         });
+    });
 
-        // Cerrar menú al hacer clic en un enlace
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
+    // 3. Efecto Navbar al hacer Scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.remove('bg-transparent', 'py-6');
+            navbar.classList.add('bg-black/90', 'backdrop-blur-md', 'py-4', 'shadow-lg');
+        } else {
+            navbar.classList.add('bg-transparent', 'py-6');
+            navbar.classList.remove('bg-black/90', 'backdrop-blur-md', 'py-4', 'shadow-lg');
+        }
+    });
+
+    // 4. Fondo "Matrix" de la sección Desarrollo Web
+    (function () {
+        const canvas = document.getElementById('dev-matrix');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const section = canvas.closest('section');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const chars = '01<>{}[]/;=+-#$*_ABCDEFHTMLCSSJS';
+        let columns = [];
+        let fontSize = 16;
+        let animationId = null;
+
+        function resize() {
+            canvas.width = section.offsetWidth;
+            canvas.height = section.offsetHeight;
+            const columnCount = Math.floor(canvas.width / fontSize);
+            columns = new Array(columnCount).fill(0).map(() => Math.random() * -canvas.height / fontSize);
+        }
+
+        function draw() {
+            ctx.fillStyle = 'rgba(5, 5, 5, 0.08)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#1b4d3e';
+            ctx.font = fontSize + 'px monospace';
+
+            columns.forEach((y, i) => {
+                const char = chars[Math.floor(Math.random() * chars.length)];
+                const x = i * fontSize;
+                ctx.fillText(char, x, y * fontSize);
+
+                if (y * fontSize > canvas.height && Math.random() > 0.975) {
+                    columns[i] = 0;
+                } else {
+                    columns[i] = y + 1;
+                }
             });
-        });
 
-        // 3. Efecto Navbar al hacer Scroll
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.remove('bg-transparent', 'py-6');
-                navbar.classList.add('bg-black/90', 'backdrop-blur-md', 'py-4', 'shadow-lg');
-            } else {
-                navbar.classList.add('bg-transparent', 'py-6');
-                navbar.classList.remove('bg-black/90', 'backdrop-blur-md', 'py-4', 'shadow-lg');
-            }
+            animationId = requestAnimationFrame(draw);
+        }
+
+        if (prefersReducedMotion) {
+            resize();
+            ctx.fillStyle = 'rgba(5,5,5,1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            return;
+        }
+
+        resize();
+        draw();
+        window.addEventListener('resize', () => {
+            cancelAnimationFrame(animationId);
+            resize();
+            draw();
         });
-    </script>
+    })();
+</script>
 </body>
