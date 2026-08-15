@@ -1,10 +1,10 @@
-/* Utilidades extra si las necesitas en el futuro */
+/* Suavizado de fuentes */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Configuración de barra de desplazamiento (Scrollbar) */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -18,7 +18,8 @@ body {
     border-radius: 4px;
 }
 
-/* Animaciones personalizadas */
+
+/* Animación de entrada */
 .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
     opacity: 0;

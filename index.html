@@ -38,6 +38,7 @@
     </script>
 <link rel="shortcut icon" href="/media/img/logozosma.webp" type="image/x-icon">
 </head>
+
 <body class="bg-black text-gray-100 antialiased overflow-x-hidden">
     <!-- BARRA DE NAVEGACIÓN -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6 bg-transparent">
@@ -46,8 +47,6 @@
             <a href="#home" class="text-2xl font-serif font-bold tracking-widest text-white flex items-center gap-3">               
                 <span class="text-zosma-green">ZOSMA</span>STUDIO
             </a>
-            
-
             <!-- MENÚ ESCRITORIO -->
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="text-sm uppercase tracking-widest text-gray-300 hover:text-zosma-green transition-colors duration-300">Inicio</a>
@@ -74,40 +73,69 @@
     </nav>
 
     <!-- SECCIÓN HERO (PORTADA) -->
-    <section id="home" class="h-screen w-full overflow-hidden flex items-center justify-center">
-        <div class="absolute inset-0 z-0 pointer-events-none">
-            <img src="media/img/amorybits2.webp" alt="Fondo Cinematográfico" class="absolute inset-0 w-full h-full object-cover opacity-80"/>
-            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black"></div>
-        </div>
+<!-- SECCIÓN HERO (PORTADA) -->
+<section id="home" class="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
 
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto fade-in-up" style="animation-delay: 0.2s;">
-            <h2 class="text-zosma-green font-bold tracking-[0.3em] uppercase mb-4 text-sm md:text-base animate-pulse">
-                Productora Audiovisual
-            </h2>
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
-                ZOSMA <br />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-green-950">
-                    STUDIOS
+    <!-- FONDO -->
+<!-- FONDO -->
+<div class="absolute inset-0 z-0">
+
+    <!-- VIDEO -->
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover"><source src="media/video/portadazosma.webm" type="video/mp4">
+    </video>
+
+    <!-- CAPA OSCURA -->
+    <div class="absolute inset-0 bg-black/80"></div>
+
+    <!-- DEGRADADO -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-zosma-green/20"></div>
+
+    <!-- DEGRADADO INFERIOR -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
+
+</div>
+
+
+    <!-- CONTENIDO -->
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="max-w-4xl fade-in-up" style="animation-delay: 0.2s;">
+
+            <!-- ETIQUETA -->
+            <div class="flex items-center gap-3 mb-6">
+
+                <span class="w-12 h-[1px] bg-zosma-green"></span>
+
+                <span class="text-zosma-green font-semibold tracking-[0.3em] uppercase text-xs md:text-sm">
+                    2023 / 2026
                 </span>
-            </h1>
-            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-                Transformamos ideas en experiencias visuales cinematográficas. Calidad, creatividad y pasión en cada frame.
-            </p>
-            
-            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <a href="#portfolio" class="px-8 py-3 bg-zosma-green hover:bg-emerald-800 text-white font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm">
-                    Ver Proyectos
-                </a>
-                <a href="#contact" class="px-8 py-3 bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm flex items-center gap-2 group">
-                    <i data-lucide="play" class="w-4 h-4 group-hover:text-black transition-colors"></i> Contacto
-                </a>
-            </div>
-        </div>
 
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-gray-400">
-            <i data-lucide="arrow-down" class="w-8 h-8"></i>
-        </div>
-    </section>
+            </div>
+
+            <!-- TÍTULO -->
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-[0.95] tracking-tight mb-8">CREAMOS.<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-zosma-green">TRANSFORMAMOS.</span></h1>
+            <!-- DESCRIPCIÓN -->
+            <p class="text-gray-300 text-lg md:text-xl lg:text-2xl max-w-2xl font-light leading-relaxed mb-10">Producción audiovisual y desarrollo web para convertir <span class="text-white font-medium">ideas</span> en experiencias que impactan.</p>
+
+            <!-- ÁREAS -->
+            <div class="flex flex-wrap gap-3 mb-10">
+                <span class="px-4 py-2 border border-white/20 bg-black/30 backdrop-blur-sm text-gray-200 text-xs md:text-sm uppercase tracking-widest"> <a href="#portfolio">🎬 Producción Audiovisual</span></a>
+
+                <span class="px-4 py-2 border border-zosma-green/40 bg-zosma-green/10 backdrop-blur-sm text-gray-200 text-xs md:text-sm uppercase tracking-widest"> <a href="#dev">&lt;/&gt; Desarrollo Web</span></a>
+
+            </div>
+
+
+            <!-- BOTONES -->
+            <div class="flex flex-col sm:flex-row gap-4"><a href="#portfolio" class="px-8 py-4 bg-zosma-green hover:bg-emerald-800 text-white font-semibold uppercase tracking-widest text-sm transition-all duration-300 rounded-sm text-center over:-translate-y-1">Ver proyectos</a><a href="#contact" class="px-8 py-4 bg-transparent border border-white/40 hover:bg-white hover:text-black text-white font-semibold uppercase tracking-widest text-sm transition-all duration-300 rounded-sm text-center">Trabajemos juntos</a></div></div>
+
+    </div>
+
+
+    <!-- INDICADOR DE SCROLL -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3 text-gray-400"><span class="text-[10px] uppercase tracking-[0.4em]">Scroll</span><i data-lucide="arrow-down" class="w-5 h-5 animate-bounce"></i></div>
+
+</section>
 
     <!-- SECCIÓN SERVICIOS -->
     <section id="services" class="py-24 bg-zinc-950 relative">
